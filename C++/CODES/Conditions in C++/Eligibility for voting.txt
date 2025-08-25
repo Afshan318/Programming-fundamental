@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int age;
+    string nationality;
+
+    cout << "Enter your age: ";
+    cin >> age;
+    cout << "Enter your nationality: ";
+    cin >> nationality;
+
+    if (age >= 18 && (nationality == "Indian" || nationality == "indian")) {
+        cout << "Eligible to vote" << endl;
+    } 
+else {
+        cout << "Not eligible to vote" << endl;
+    }
+
+    return 0;
+}
