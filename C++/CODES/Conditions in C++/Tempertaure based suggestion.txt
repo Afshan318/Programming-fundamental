@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int temp;
+    cout << "Enter current temperature (°C): ";
+    cin >> temp;
+
+    if (temp >= 40) {
+        cout << "Too hot! Stay indoors." << endl;
+    } 
+else if (temp >= 30) {
+        cout << "Use sunscreen. It's hot." << endl;
+    } 
+else if (temp >= 20) {
+        cout << "Pleasant weather." << endl;
+    } 
+else if (temp >= 10) {
+        cout << "Wear a sweater." << endl;
+    } 
+else {
+        cout << "Very cold! Stay warm." << endl;
+    }
+
+    return 0;
+}
