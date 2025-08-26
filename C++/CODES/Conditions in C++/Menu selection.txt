@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+
+    cout << "Menu:\n";
+    cout << "1. Start Game\n";
+    cout << "2. Load Game\n";
+    cout << "3. Options\n";
+    cout << "4. Exit\n";
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1: cout << "Starting game...";
+        break;
+        case 2: cout << "Loading game...";
+        break;
+        case 3: cout << "Opening options...";
+        break;
+        case 4: cout << "Exiting..."; 
+        break;
+        default: cout << "Invalid choice!";
+    }
+
+    return 0;
+}
