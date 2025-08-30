@@ -1,0 +1,24 @@
+Divisors Of Number.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    int i = 1;
+    cout << "Divisors of " << num << " are: ";
+    do {
+        if (num % i == 0) {
+            cout << i << " ";
+        }
+        i++;
+    }
+ while (i <= num);
+
+    cout << endl;
+    return 0;
+}
