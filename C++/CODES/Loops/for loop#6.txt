@@ -1,0 +1,13 @@
+Sqaure Number Series.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 10;  // Number of terms
+    for (int i = 1; i <= n; i++) {
+        cout << i * i << " ";  // Printing square of i
+    }
+    return 0;
+}
