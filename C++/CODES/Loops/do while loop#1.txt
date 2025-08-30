@@ -1,0 +1,16 @@
+Validity user input.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    do {
+        cout << "Enter a number greater than 10: ";
+        cin >> num;
+    }
+ while (num <= 10);
+
+    cout << "You entered: " << num << endl;
+    return 0;
+}
