@@ -1,0 +1,20 @@
+Countdown Timer.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int countdown;
+    cout << "Enter a number to start countdown: ";
+    cin >> countdown;
+
+    do {
+        cout << countdown << " ";
+        countdown--;
+    } 
+while (countdown >= 0);
+
+    cout << "\nTime's up!" << endl;
+    return 0;
+}
