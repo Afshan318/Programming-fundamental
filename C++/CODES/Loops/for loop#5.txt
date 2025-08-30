@@ -1,0 +1,28 @@
+Prime Number Series.
+
+
+#include <iostream>
+using namespace std;
+
+bool isPrime(int num) {
+    if (num <= 1) return false;
+    for (int i = 2; i <= num / 2; i++) {
+        if (num % i == 0) return false;
+    }
+    return true;
+}
+
+int main() {
+    int n = 10;  // First N primes
+    int count = 0;
+    int num = 2;
+    cout << "First " << n << " prime numbers: ";
+    while (count < n) {
+        if (isPrime(num)) {
+            cout << num << " ";
+            count++;
+        }
+        num++;
+    }
+    return 0;
+}
